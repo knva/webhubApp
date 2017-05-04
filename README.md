@@ -2,7 +2,7 @@
 WebHubBot  data by
 
 ##a lose html
-##data by WebHubBot
+##data by [WebHubBot] (https://github.com/xiyouMc/WebHubBot)
 
 
 
