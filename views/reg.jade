@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  script.
+    $("nav a:eq(0)").attr({class:'blog-nav-item'})
+    $("nav a:eq(2)").attr({class:'blog-nav-item active'})
+  .container
+    form
+      .form-group
+        label(for='exampleInputEmail1') Email address
+        input#exampleInputEmail1.form-control(type='email', placeholder='Email')
+      .form-group
+        label(for='exampleInputPassword1') Password
+        input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+      .form-group
+        label(for='exampleInputFile') File input
+        input#exampleInputFile(type='file')
+        p.help-block Example block-level help text here.
+      .checkbox
+        label
+          input(type='checkbox')
+          |  Check me out
+      button.btn.btn-default(type='submit') Submit
+  include foot.jade

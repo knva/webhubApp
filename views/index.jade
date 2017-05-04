@@ -1,0 +1,70 @@
+extends layout
+
+block content
+  .container
+    .blog-header
+     h1.blog-title #{title}
+     p.lead.blog-description The official example template of creating a blog with Bootstrap.
+    .row
+      .col-sm-8.blog-main
+        .blog-post
+          h2.blog-post-title New feature
+          p.blog-post-meta
+            | December 14, 2013 by 
+            a(href='#') Chris
+        // /.blog-post
+        nav
+          ul.pager
+            li
+              a(href='#') Previous
+            li
+              a(href='#') Next
+      // /.blog-main
+      .col-sm-3.col-sm-offset-1.blog-sidebar
+        .sidebar-module.sidebar-module-inset
+          h4 About
+          p
+            | Etiam porta 
+           em sem malesuada magna
+            |  mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+        .sidebar-module
+          h4 Archives
+          ol.list-unstyled
+            li
+              a(href='#') March 2014
+            li
+              a(href='#') February 2014
+            li
+              a(href='#') January 2014
+            li
+              a(href='#') December 2013
+            li
+              a(href='#') November 2013
+            li
+              a(href='#') October 2013
+            li
+              a(href='#') September 2013
+            li
+              a(href='#') August 2013
+            li
+              a(href='#') July 2013
+            li
+              a(href='#') June 2013
+            li
+              a(href='#') May 2013
+            li
+              a(href='#') April 2013
+        .sidebar-module
+          h4 Elsewhere
+          ol.list-unstyled
+            li
+              a(href='#') GitHub
+            li
+              a(href='#') Twitter
+            li
+              a(href='#') Facebook
+      // /.blog-sidebar
+    // /.row
+  // /.container
+
+  include foot.jade

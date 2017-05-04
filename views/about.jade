@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+    p about
+  script.
+    $("nav a:eq(0)").attr({class:'blog-nav-item'})
+    $("nav a:eq(4)").attr({class:'blog-nav-item active'})
+
+  include foot.jade
